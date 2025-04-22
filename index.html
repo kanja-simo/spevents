@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&P Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Login Page -->
+  <div id="loginScreen" class="login-container">
+    <h2>S&P Events Login</h2>
+    <div class="form-row">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Enter username" />
+    </div>
+    <div class="form-row">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter password" />
+    </div>
+    <button onclick="validateLogin()">Login</button>
+    <p id="loginError" class="error-message"></p>
+  </div>
+
+  <!-- Main Content - Hidden Initially -->
+  <div id="mainContent" style="display: none;">
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <h1 id = "h1">S&P Events</h1>
+      <nav>
+        <a href="#weddings">Weddings</a>
+        <a href="#babyshowers">Baby Showers</a>
+        <a href="#achievement">Achievements</a>
+        <a href="#birthdays">Birthdays</a>
+        <a href="#funerals">Funerals</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <br><br>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class = "hero-banner">
+        <img src = "Images/banner.jpg" alt = "S&P Events Banner"/>
+        <div class = "hero-text">
+          <h2>Welcome to S&P Events</h2>
+          <p>Your trusted partner in unforgettable celebrations.</p>
+        </div>
+      </div>
+    
+      <div class = "about-us">
+        <br><br>
+        <h3>About Us</h3>
+    <p>
+      At S&P Events, we specialize in creating unforgettable experiences for life’s most
+      cherished moments. Whether it's an elegant wedding, a joyful baby shower, or a
+      heartfelt tribute, our team brings creativity and care to every detail. With years
+      of expertise and a passion for celebration, we transform your vision into reality.
+    </p>
+      </div>
+      
+    </section>
+
+    <!-- Service Sections -->
+    <section id="weddings" class="section">
+      <h2>Wedding Planning</h2>
+      <p>We craft magical wedding experiences tailored to your love story.</p>
+      <img src="images/wedding.jpg" alt="Wedding setup" />
+    </section>
+
+    <section id="babyshowers" class="section">
+      <h2>Baby Showers</h2>
+      <p>Celebrate your bundle of joy with a beautifully curated event.</p>
+      <img src="images/babyshower.jpg" alt="Baby shower decoration" />
+    </section>
+
+    <section id="achievements" class="section">
+      <h2>Achievements</h2>
+      <p>Honor milestones and achievements in a grand way.</p>
+      <img src="images/achievement.jpg" alt="Achievement celebration" />
+    </section>
+
+    <section id="birthdays" class="section">
+      <h2>Birthday Celebrations</h2>
+      <p>Throw the perfect birthday bash for all ages!</p>
+      <img src="images/birthday.jpg" alt="Birthday party" />
+    </section>
+
+    <section id="funerals" class="section">
+      <h2>Funeral Services</h2>
+      <p>We provide respectful and elegant services to honor your loved ones.</p>
+      <img src="images/funeral.jpg" alt="Funeral service" />
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="section">
+      <h2>Contact & Booking</h2>
+      <form id="bookingForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="date" required />
+        <textarea placeholder="Event Details"></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 S&P Events. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

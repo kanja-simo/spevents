@@ -1,0 +1,276 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f5f3f7, #fdf8ff);
+  color: #333;
+}
+
+/* Login Section */
+#loginScreen {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #e3d7f7, #fff2f5);
+}
+
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #783f8e;
+}
+
+.login-container label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #783f8e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-container button:hover {
+  background-color: #5e2f6f;
+}
+
+#errorMessage {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+#h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: beige;
+}
+/* Main Content */
+#mainContent {
+  display: none;
+}
+
+/* Navigation Bar */
+header.navbar {
+  background-color: #783f8e;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+section:nth-child(even) {
+  background-color: #fdf5ff;
+}
+
+section h2 {
+  font-size: 32px;
+  color: #783f8e;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+section img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  margin: 20px auto;
+}
+
+/* Contact & Booking */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #783f8e;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #5e2f6f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #783f8e;
+  color: white;
+}
+
+/* Hero Banner */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1) 2s ease-out;
+
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: antiquewhite;
+   animation: fadeInLeft 2s ease-out;
+}
+
+.hero-text p {
+  font-size: 20px;
+  animation: fadeInLeft 2s ease-out;
+}
+
+/* About Us Section */
+.about-us {
+  background-color: #fdf5ff;
+  padding: 40px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 60px 20px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+.about-us h3 {
+  font-size: 28px;
+  color: #783f8e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-us p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 16px;
+  animation: fadeInRight 1.5s ease-out;
+}
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
